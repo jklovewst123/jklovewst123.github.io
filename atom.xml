@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jklovewst123.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-07-24T08:47:27.014Z</updated>
+    <title>JK&apos;s IC humble puddle</title>
+    <updated>2020-07-24T08:52:24.735Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jklovewst123.github.io"/>
     <link rel="self" href="https://jklovewst123.github.io/atom.xml"/>
-    <subtitle>温故而知新223</subtitle>
+    <subtitle>IC不挣钱啊！</subtitle>
     <logo>https://jklovewst123.github.io/images/avatar.png</logo>
     <icon>https://jklovewst123.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, JK&apos;s IC humble puddle</rights>
+    <entry>
+        <title type="html"><![CDATA[Published Papers]]></title>
+        <id>https://jklovewst123.github.io/post/published-papers/</id>
+        <link href="https://jklovewst123.github.io/post/published-papers/">
+        </link>
+        <updated>2020-07-24T08:49:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>[1]Kai Jing, Ningmei Yu, Xing  Quan, et al.Dynamic equalization and fast settling based wide operating voltage range 93 dB PSRR PTAT current reference. Microelectronics Journal. (已录用，DOI：10.1016/j.mejo.2020.104812，2020，SCI收录)<br>
+[2]Kai Jing, Ningmei Yu, Xi Wang,et al. Methodology of Noise Flatness Based on Network Quality Factor in RF Wideband Applications. Circuits, Systems, and Signal Processing. （Early Access，DOI：10.1007/s00034-020-01380-3，2020，SCI收录）<br>
+[3]Kai Jing, Ningmei Yu, Xing Quan. An S- to Ku- wideband low-noise amplifier using asymmetric π filter and shunt-peaking technique with simultaneous input match and noise flatness, Microwave and Optical Technology Letters, Vol. 61, No. 6：1509-1516, 2019. (SCI收录) WOS：000465078300013<br>
+[4]Kai Jing, Ningmei Yu, Zhongjie Guo, et al. A 20 ppm/℃ Current Reference with improved ZTC Characteristic for SerDes application. IEEE International Conference on Electron Devices and Solid-State Circuits(EDSSC), 2019. (EI收录)  Accession number:20193007225864<br>
+[5]井凯,余宁梅,戴扬,王希.适用于高速背板通信的动态增益与盲均衡协同校正自适应均衡模型, 西北大学学报(自然科学版), 49(06): 888-894, 2019.(中文核心收录)<br>
+[6]Yang Zhaonian, Yang Yuan, Jing Kai, et al. Diode and RC Co-Triggered 2xVDD-Tolerant Electrostatic Discharge Detection Circuit in Nanoscale Complementary Metal-Oxide-Semiconductor Technology. Journal of Nanoelectronics and Optoelectronics, Vol. 14, No.5: 734-739, 2019.(SCI收录) WOS:000462778400021<br>
+[7]Liu Liwen, Zhuang Yiqi, Zhang Li, Jing Kai, Dong Siwan, Chen Yushi. A Reconfigurable Low Noise Amplifier with Sub-amplifier Compensation for Wearable Wireless Neural Recording System. IEEE International Conference on Electron Devices and Solid-State Circuits, (EDSSC), 2019. (EI收录) Accession number:20193007225961<br>
+[8]Kai Jing, Ningmei Yu, Xing Quan. A 168 dB high gain folded cascode operational amplifier for Delta-Sigma ADC, IEEE Conference on Industrial Electronics and Applications: 2228-2231, 2019.(EI收录) Accession number:20194107525614<br>
+[9]Guo Zhongjie, Zhang Qian, Jing Kai. Offset-free Column Buffer for CMOS image sensor. IEEE International Conference on Electron Devices and Solid-State Circuits, (EDSSC), 2019. (EI收录) Accession number:20193007226096<br>
+[10]Quan Xing, Zhuang Yiqi, Li Zhenrong, Zhang Yanlong, Jing Kai. A 2–22 GHz low-imbalanced active balun in 0.18 um SiGe BiCMOS technology, AEU-International Journal of Electronics and Communications, Vol. 70, No. 10: 1367-1373, 2016. (SCI收录)<br>
+[11]Quan Xing, Zhuang Yiqi, Li Zhenrong, Zhang Yanlong, Jing Kai, Zhan Jinsong.  Current generator for 6-bit active phase shifter. Electronics Letters, Vol. 51, No. 15: 1175-1176, 2015. (SCI收录)<br>
+[12]Kai Jing, Yiqi Zhuang, Zhenrong Li, et al. Design and Analysis on Four Stage SiGe HBT Low Noise Amplifier, High Technology Letters. Vol. 3, No. 21: 358-363, 2015. (EI收录) Accession number:20154201390413<br>
+[13]井凯, 庄奕琪, 李振荣, et al. 适用于802.11a的低噪声放大器设计. 浙江大学学报(工学版), 2015(03):89-94. (EI收录) Accession number:20151900817848<br>
+[14]Zhang Yanlong, Zhuang Yiqi, Li Zhenrong, Ren Xiaojiao, Wang Bo, Jing Kai. A 5-bit lumped 0.18-mu m CMOS step attenuator with low insertion loss and low phase distortion in 3-22 GHz applications, Microelectronics Journal, Vol. 4, No. 45:468-476, 2015. (SCI收录)<br>
+[15]Kai Jing, Yiqi Zhuang, Huaxi Gu. A high image rejection SiGe low noise amplifier using passive notch filter. IEICE ELECTRONICS EXPRESS, Vol. 3, No. 11:1-5, 2014. (SCI收录) WOS:000333894200005<br>
+[16]Kai Jing, Yiqi Zhuang, Zhenrong Li, et al. A SiGe HBT low noise amplifier using on-chip notch filter for K band wireless communication. Microelectronics Journal, Vol. 6, No. 45:683-689, 2014. (SCI收录) WOS:000337553900016<br>
+[17]<strong>Kai Jing</strong>, Yiqi Zhuang, Zhenrong Li, et al. A SiGe LC-ladder low noise amplifier with base resistance match, gain and noise flatness for UWB applications, Microelectronics Journal, Vol. 6, No. 45: 648-656, 2014. (SCI收录) WOS:000337553900012<br>
+[18]<strong>Kai Jing</strong>, Yiqi Zhuang, Zhenrong Li. Volterra series-based linearity enhancement design of low noise amplifier. Journal of Sichuan University (Engineering Science Edition), Vol. 1, No. 46, 2014. (EI收录) Accession number:20142717903436<br>
+[19]Du Yongqian, Zhuang Yiqi, Li Xiaoming, <strong>Jing Kai</strong>. New type of voltage reference with low voltage and low power, Journal of Huazhong University of Science and Technology(Natural Science Edition), Vol. 11, No. 41, 2013. (EI收录)</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[1]Kai Jing, Ningmei Yu, Xing  Quan, et al.Dynamic equalization and fast settling based wide operating voltage range 93 dB PSRR PTAT current reference. Microelectronics Journal. (已录用，DOI：10.1016/j.mejo.2020.104812，2020，SCI收录)<br>
+[2]Kai Jing, Ningmei Yu, Xi Wang,et al. Methodology of Noise Flatness Based on Network Quality Factor in RF Wideband Applications. Circuits, Systems, and Signal Processing. （Early Access，DOI：10.1007/s00034-020-01380-3，2020，SCI收录）<br>
+[3]Kai Jing, Ningmei Yu, Xing Quan. An S- to Ku- wideband low-noise amplifier using asymmetric π filter and shunt-peaking technique with simultaneous input match and noise flatness, Microwave and Optical Technology Letters, Vol. 61, No. 6：1509-1516, 2019. (SCI收录) WOS：000465078300013<br>
+[4]Kai Jing, Ningmei Yu, Zhongjie Guo, et al. A 20 ppm/℃ Current Reference with improved ZTC Characteristic for SerDes application. IEEE International Conference on Electron Devices and Solid-State Circuits(EDSSC), 2019. (EI收录)  Accession number:20193007225864<br>
+[5]井凯,余宁梅,戴扬,王希.适用于高速背板通信的动态增益与盲均衡协同校正自适应均衡模型, 西北大学学报(自然科学版), 49(06): 888-894, 2019.(中文核心收录)<br>
+[6]Yang Zhaonian, Yang Yuan, Jing Kai, et al. Diode and RC Co-Triggered 2xVDD-Tolerant Electrostatic Discharge Detection Circuit in Nanoscale Complementary Metal-Oxide-Semiconductor Technology. Journal of Nanoelectronics and Optoelectronics, Vol. 14, No.5: 734-739, 2019.(SCI收录) WOS:000462778400021<br>
+[7]Liu Liwen, Zhuang Yiqi, Zhang Li, Jing Kai, Dong Siwan, Chen Yushi. A Reconfigurable Low Noise Amplifier with Sub-amplifier Compensation for Wearable Wireless Neural Recording System. IEEE International Conference on Electron Devices and Solid-State Circuits, (EDSSC), 2019. (EI收录) Accession number:20193007225961<br>
+[8]Kai Jing, Ningmei Yu, Xing Quan. A 168 dB high gain folded cascode operational amplifier for Delta-Sigma ADC, IEEE Conference on Industrial Electronics and Applications: 2228-2231, 2019.(EI收录) Accession number:20194107525614<br>
+[9]Guo Zhongjie, Zhang Qian, Jing Kai. Offset-free Column Buffer for CMOS image sensor. IEEE International Conference on Electron Devices and Solid-State Circuits, (EDSSC), 2019. (EI收录) Accession number:20193007226096<br>
+[10]Quan Xing, Zhuang Yiqi, Li Zhenrong, Zhang Yanlong, Jing Kai. A 2–22 GHz low-imbalanced active balun in 0.18 um SiGe BiCMOS technology, AEU-International Journal of Electronics and Communications, Vol. 70, No. 10: 1367-1373, 2016. (SCI收录)<br>
+[11]Quan Xing, Zhuang Yiqi, Li Zhenrong, Zhang Yanlong, Jing Kai, Zhan Jinsong.  Current generator for 6-bit active phase shifter. Electronics Letters, Vol. 51, No. 15: 1175-1176, 2015. (SCI收录)<br>
+[12]Kai Jing, Yiqi Zhuang, Zhenrong Li, et al. Design and Analysis on Four Stage SiGe HBT Low Noise Amplifier, High Technology Letters. Vol. 3, No. 21: 358-363, 2015. (EI收录) Accession number:20154201390413<br>
+[13]井凯, 庄奕琪, 李振荣, et al. 适用于802.11a的低噪声放大器设计. 浙江大学学报(工学版), 2015(03):89-94. (EI收录) Accession number:20151900817848<br>
+[14]Zhang Yanlong, Zhuang Yiqi, Li Zhenrong, Ren Xiaojiao, Wang Bo, Jing Kai. A 5-bit lumped 0.18-mu m CMOS step attenuator with low insertion loss and low phase distortion in 3-22 GHz applications, Microelectronics Journal, Vol. 4, No. 45:468-476, 2015. (SCI收录)<br>
+[15]Kai Jing, Yiqi Zhuang, Huaxi Gu. A high image rejection SiGe low noise amplifier using passive notch filter. IEICE ELECTRONICS EXPRESS, Vol. 3, No. 11:1-5, 2014. (SCI收录) WOS:000333894200005<br>
+[16]Kai Jing, Yiqi Zhuang, Zhenrong Li, et al. A SiGe HBT low noise amplifier using on-chip notch filter for K band wireless communication. Microelectronics Journal, Vol. 6, No. 45:683-689, 2014. (SCI收录) WOS:000337553900016<br>
+[17]<strong>Kai Jing</strong>, Yiqi Zhuang, Zhenrong Li, et al. A SiGe LC-ladder low noise amplifier with base resistance match, gain and noise flatness for UWB applications, Microelectronics Journal, Vol. 6, No. 45: 648-656, 2014. (SCI收录) WOS:000337553900012<br>
+[18]<strong>Kai Jing</strong>, Yiqi Zhuang, Zhenrong Li. Volterra series-based linearity enhancement design of low noise amplifier. Journal of Sichuan University (Engineering Science Edition), Vol. 1, No. 46, 2014. (EI收录) Accession number:20142717903436<br>
+[19]Du Yongqian, Zhuang Yiqi, Li Xiaoming, <strong>Jing Kai</strong>. New type of voltage reference with low voltage and low power, Journal of Huazhong University of Science and Technology(Natural Science Edition), Vol. 11, No. 41, 2013. (EI收录)</p>
+]]></content>
+    </entry>
 </feed>
