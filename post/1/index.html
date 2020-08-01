@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>1 | JK-IC humble puddle</title>
+<title>40nm后仿真提图经验总结 | JK-IC humble puddle</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://jklovewst123.github.io/favicon.ico?v=1595582512983">
+<link rel="shortcut icon" href="https://jklovewst123.github.io/favicon.ico?v=1596271954520">
 <link rel="stylesheet" href="https://jklovewst123.github.io/styles/main.css">
 
 
@@ -18,10 +18,10 @@
 
 
 
-    <meta name="description" content="123
+    <meta name="description" content="1.后仿真提参选项问题
+在进行PEX提参数的时候，经辛博士提醒发现一个问题，即在calibre选择transistor提参数时，电容会被提两次。以下图反相器为例。
 
-123
-" />
+本身在Out和gnd之间，有1pF的电容，但是在RVE界面，在CC（耦合电..." />
     <meta name="keywords" content="IC techinques" />
   </head>
   <body>
@@ -31,7 +31,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://jklovewst123.github.io">
-        <img src="https://jklovewst123.github.io/images/avatar.png?v=1595582512983" class="site-logo">
+        <img src="https://jklovewst123.github.io/images/avatar.png?v=1596271954520" class="site-logo">
         <h1 class="site-title">JK-IC humble puddle</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -93,13 +93,41 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">1</h2>
+            <h2 class="post-title">40nm后仿真提图经验总结</h2>
             <div class="post-date">2020-07-24</div>
             
             <div class="post-content" v-pre>
-              <p>123</p>
-<!-- more -->
-<p>123</p>
+              <p>1.后仿真提参选项问题<br>
+在进行PEX提参数的时候，经辛博士提醒发现一个问题，即在calibre选择transistor提参数时，电容会被提两次。以下图反相器为例。<br>
+<img src="https://jklovewst123.github.io/post-images/1596271834992.png" alt="" loading="lazy"></p>
+<p>本身在Out和gnd之间，有1pF的电容，但是在RVE界面，在CC（耦合电容）提参处也存在一个1pF的寄生。<br>
+也就是说，电容除了1pF的负载之外，它又提取了一边。<br>
+解决方法：<br>
+一、在提出的Calibre版图时，把负载电容删掉，这样就只剩C+CC的提参了，因为里面包含电容，因此剩下的就是本身电容和寄生。（这个方法极考验眼神）<br>
+二、也是应该采用的办法，即提参时用Gate模式。不过需要在Inputs H-Cells选择hcell_list文件和xcell_list。这个xcell文件是为了避免寄生参量的重复提取。Calibre xRC提供一种称为“黑盒”的提取方法，可以将指定的器件看作理想器件，对其内部的节点之间的寄生电容和寄生电阻不再提取。选择Gate level提取。（下图网上找的）<br>
+<img src="https://jklovewst123.github.io/post-images/1596271841661.png" alt="" loading="lazy"><br>
+<img src="https://jklovewst123.github.io/post-images/1596271859433.png" alt="" loading="lazy"><br>
+<img src="https://jklovewst123.github.io/post-images/1596271867317.png" alt="" loading="lazy"><br>
+如果LVS正确，就生成下图（下图网上找的）<br>
+<img src="https://jklovewst123.github.io/post-images/1596271888961.png" alt="" loading="lazy"><br>
+Cellmap是描述寄生参量提取前后器件对应关系的文件，默认的是./calview.cellmap。<br>
+这里再确认的时候，有时候会出现错误，这是因为选择原理图模式提取时，器件距离太近导致，因此，可以选择array阵列形式，但是这种形式就是有点不利于找器件（我们通过寻找仿真的器件的直流工作点，可以观察和评估后仿真结果，用array真的有点累）。<br>
+<img src="https://jklovewst123.github.io/post-images/1596271900227.png" alt="" loading="lazy"><br>
+2.后仿版图影响问题<br>
+1.输入端口匹配<br>
+在设计输入时，由于自己做的电路输入端口有50欧的负载，开始布局时，50欧过远，且输入端口到晶体管距离过远（200um），过大的电阻导致S21变化过大（虽然S11也有影响）<br>
+<img src="https://jklovewst123.github.io/post-images/1596271920279.png" alt="" loading="lazy"><br>
+<img src="https://jklovewst123.github.io/post-images/1596271929174.png" alt="" loading="lazy"><br>
+左边是前仿真，右边是后仿真的S11，很明显，变化较大<br>
+<img src="https://jklovewst123.github.io/post-images/1596271937452.png" alt="" loading="lazy"><br>
+这是上面的那根长线若有寄生电阻，S21的变化曲线。很明显，带宽限制很大。<br>
+2.输出CML buffer的影响<br>
+如果输出的CML到buffer，有较长的线，那么这个寄生电阻是会很大程度降低增益的，如下图，当有几十欧姆时，会有明显的增益降低，需要注意。<br>
+<img src="https://jklovewst123.github.io/post-images/1596271947051.png" alt="" loading="lazy"><br>
+3.后仿debug<br>
+后仿时，可以通过calibre的dc工作点，来评估哪里的影响大的。后仿提参时，电路中的器件会被重新命名，如MM_器件原理图名称、器件原理图名称@2@3(这个是分段电阻和倍数个晶体管常见的表达形式)，所以是可以找到的。而且，是能从结果中，看到工作点的，如下图：<br>
+<img src="https://jklovewst123.github.io/post-images/1596271951277.png" alt="" loading="lazy"><br>
+图中可以看出，原本gnd是要0V的，但是，这里出现了52mV，根本原因是gnd电流流经寄生电阻引起的，因此就要降低gnd的电阻。</p>
 
             </div>
             
